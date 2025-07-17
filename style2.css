@@ -295,6 +295,11 @@ header {
   width: 450px;
   height: auto;
   flex-shrink: 0;
+  transition: transform 2.1s ease;
+}
+
+.phone2:hover {
+  transform: scale(1.1);
 }
 
 .rightpart {
@@ -306,7 +311,20 @@ header {
 .artic3 {
   max-width: 700px;
   padding: 1rem;
+  transition: transform 1s ease;
+
 }
+
+.artic1:hover,
+.artic2:hover,
+.artic3:hover {
+  transform: scale(1.15);
+}
+
+.textcon:hover {
+  color: #1a49b8;
+}
+
 
 .img1,
 .img2,
@@ -392,7 +410,6 @@ details p {
   border-radius: 10px;
   margin-bottom: -40px;
   padding: 90px;
-  gap: 2rem;
 }
 
 .footerpart2 a {
@@ -423,28 +440,49 @@ details p {
   overflow: hidden;
 }
 
+.bluetabletitle {
+  display: column;
+  font-size: 19px;
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.tables {
+  transition: transform 1s ease;
+}
+
+.tables:hover {
+  transform: scale(1.05);
+}
+
+.bluetabletitle img {
+  margin-left: -50px;
+  margin-bottom: -20px;
+}
+
 .bluetable> :not(.whitetable) {
   flex: 1 1 auto;
-  margin-right: 20px;
+  margin-right: 25px;
 }
 
 .whitetable {
   background-color: white;
-  width: 320px;
-  height: 100%;
+  width: 400px;
+  height: auto;
   padding: 0;
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+  margin-right: 60px;
 }
 
 .whitetable img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
   display: block;
+  padding-right: 50px;
 }
 
 @media (max-width: 992px) {
@@ -454,15 +492,11 @@ details p {
   .part3 {
     flex: 1 1 calc(50% - 1rem);
   }
-
-  .whitetable {
-    margin-left: 0;
-    width: 100%;
-  }
 }
 
 @media (max-width: 768px) {
 
+  .tables,
   .buble1,
   .main-part,
   .prop,
@@ -483,10 +517,6 @@ details p {
     text-align: center;
   }
 
-  .phone {
-    transform: none;
-  }
-
   .part1,
   .part2,
   .part3 {
@@ -497,4 +527,32 @@ details p {
     padding: 40px 2rem;
   }
 
+  .whitetable img {
+    width: auto;
+    padding: 0;
+    height: auto;
+
+  }
+}
+
+.tittle {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  max-width: auto;
+}
+
+.tittle p {
+  font-size: 19px;
+  color: #707074;
+
+}
+
+.chattittle {
+  display: flex;
+}
+
+.chattittle img {
+  max-width: 60px;
+  max-height: 58px;
+  padding-right: 10px;
 }
